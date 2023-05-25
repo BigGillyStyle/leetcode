@@ -1,0 +1,26 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigGillyStyle/leetcode.git"
+  },
+  "author": "Andy Pickler",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/BigGillyStyle/leetcode/issues"
+  },
+  "homepage": "https://github.com/BigGillyStyle/leetcode#readme",
+  "devDependencies": {
+    "@tsconfig/node18": "^2.0.1",
+    "@types/node": "^18.16.14",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.2",
+    "typescript": "^5.0.4"
+  }
+}

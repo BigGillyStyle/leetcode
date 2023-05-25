@@ -9,3 +9,7 @@ test("3 is III", () => {
 test("LVIII is 58", () => {
   assert.strictEqual(romanToInt("LVIII"), 58);
 });
+
+test("MCMXCIV is 1994", () => {
+  assert.strictEqual(romanToInt("MCMXCIV"), 1994);
+});

@@ -1,22 +1,22 @@
-export function lengthOfLongestSubstring(s: string): number {
-  const inputStrLength = s.length;
+export function lengthOfLongestSubstring(characters: string): number {
+  const inputStrLength = characters.length;
   if (inputStrLength < 2) {
     return inputStrLength;
   }
 
-  let maxLength = 0;
+  let length = 0;
   let leftIndex = 0;
-  const charMap = new Map<string, number>();
-
+  const characterMap = new Map<string, number>();
   for (let rightIndex = 0; rightIndex < inputStrLength; rightIndex++) {
-    const char = s[rightIndex];
-    if (charMap.has(char)) {
-      leftIndex = (charMap.get(char) as number) + 1;
+    const character = characters[rightIndex];
+    const prevCharIndex = characterMap.get(character);
+    if (characterMap.has(character) && prevCharIndex! >= leftIndex) {
+      leftIndex = prevCharIndex! + 1;
     }
 
-    maxLength = Math.max(maxLength, rightIndex - leftIndex + 1);
-    charMap.set(char, rightIndex);
+    length = Math.max(length, rightIndex - leftIndex + 1);
+    characterMap.set(character, rightIndex);
   }
 
-  return maxLength;
+  return length;
 }

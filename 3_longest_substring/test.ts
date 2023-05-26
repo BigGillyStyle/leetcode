@@ -14,6 +14,6 @@ it("pwwkew is 3", () => {
   assert.strictEqual(lengthOfLongestSubstring("pwwkew"), 3);
 });
 
-it("abcabca is 3", () => {
-  assert.strictEqual(lengthOfLongestSubstring("abcabca"), 3);
+it("abba is 2", () => {
+  assert.strictEqual(lengthOfLongestSubstring("abba"), 2);
 });

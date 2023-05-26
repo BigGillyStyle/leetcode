@@ -18,7 +18,7 @@
   "homepage": "https://github.com/BigGillyStyle/leetcode#readme",
   "devDependencies": {
     "@tsconfig/node18": "^2.0.1",
-    "@types/node": "^18.16.14",
+    "@types/node": "^18.16.15",
     "ts-node": "^10.9.1",
     "tslib": "^2.5.2",
     "typescript": "^5.0.4"

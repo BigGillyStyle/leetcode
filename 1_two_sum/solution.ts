@@ -1,13 +1,13 @@
 export function twoSum(nums: number[], target: number): number[] {
   let answer: number[] = [];
+  const numsMap = new Map<number, number>();
 
-  for (let first = 0; first < nums.length - 1; first++) {
-    for (let second = first + 1; second < nums.length; second++) {
-      console.log("first, second", first, second);
-      if (nums[first] + nums[second] === target) {
-        answer = [first, second];
-      }
+  for (let i = 0; i < nums.length; i++) {
+    let key = target - nums[i];
+    if (numsMap.has(key)) {
+      return [i, numsMap.get(key) as number];
     }
+    numsMap.set(nums[i], i);
   }
 
   return answer;

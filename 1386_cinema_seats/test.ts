@@ -30,10 +30,10 @@ it("n = 2, reservedSeats = [[2,1],[1,8],[2,6]] is 2", () => {
 it("n = 4, reservedSeats = [[4,3],[1,4],[4,6],[1,7]] is 4", () => {
   assert.equal(
     maxNumberOfFamilies(4, [
-      [1, 4],
-      [1, 7],
       [4, 3],
+      [1, 4],
       [4, 6],
+      [1, 7],
     ]),
     4
   );

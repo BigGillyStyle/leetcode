@@ -19,8 +19,6 @@
   "devDependencies": {
     "@tsconfig/node18": "^2.0.1",
     "@types/node": "^18.16.16",
-    "ts-node": "^10.9.1",
-    "tslib": "^2.5.2",
     "typescript": "^5.0.4"
   }
 }
